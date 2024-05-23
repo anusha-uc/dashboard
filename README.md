@@ -4,7 +4,7 @@
 This is a web application to analyze,filter and visualize data.
 
 ## Main Features
-Here are just a few of the things that StockMo does well:
+Here are just a few of the things that Dashboard does well:
 
   - Smooth user interface to analyze, visualize and filter data.
   - Data analysis can be easily done through the bar graph.
