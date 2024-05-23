@@ -9,7 +9,6 @@ import TextField from '@mui/material/TextField';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
@@ -66,20 +65,6 @@ const Dashboard = () => {
     } catch (error) {
       console.error('Error fetching table data:', error);
     }
-    
-    // try {
-    //   const response = await axios.get('http://localhost:8000/api/dashboard/table', {
-    //     params: { ...filters, page: pagination.currentPage, limit: pagination.itemsPerPage }
-    //   });
-    //   setData(response.data.data);
-    //   setPagination({
-    //     ...pagination,
-    //     totalPages: response.data.totalPages,
-    //     currentPage: response.data.currentPage
-    //   });
-    // } catch (error) {
-    //   console.error('Error fetching table data:', error);
-    // }
   };
 
   const handleInputChange = (e) => {

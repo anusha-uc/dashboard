@@ -29,20 +29,7 @@ const importData = async () => {
     }
 };
 
-// Delete data
-const deleteData = async () => {
-    try {
-        await Bootcamp.deleteMany();
-        await Course.deleteMany();
-        console.log('Data Destroyed...'.red.inverse);
-        process.exit();
-    } catch (err) {
-        console.error(err);
-    }
-};
 
 if (process.argv[2] === '-i') {
     importData();
-} else if (process.argv[2] === '-d') {
-    deleteData();
 }
